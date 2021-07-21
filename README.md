@@ -1,8 +1,8 @@
-# Nestjs graphql template 
+# Portfolio
 
 ## Description
 
-
+Api in graphql for my personal portfolio
 
 ## Installation
 
