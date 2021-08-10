@@ -4,6 +4,7 @@ import { GraphQLModule } from '@nestjs/graphql';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import {MongooseModule, MongooseModuleOptions} from '@nestjs/mongoose';
 import {EnvironmentVariables} from "./config/config.interface";
+import { SkillsModule } from './skills/skills.module';
 
 @Module({
   imports: [
@@ -29,6 +30,7 @@ import {EnvironmentVariables} from "./config/config.interface";
       inject: [ConfigService],
     }),
     HelloModule,
+    SkillsModule,
   ],
 })
 export class AppModule {}
